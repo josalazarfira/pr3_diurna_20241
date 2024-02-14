@@ -1,4 +1,4 @@
-package co.edu.uniquindio.clase.model;
+package co.edu.uniquindio.programacion3.repaso.model;
 
 public class Vehiculo {
 

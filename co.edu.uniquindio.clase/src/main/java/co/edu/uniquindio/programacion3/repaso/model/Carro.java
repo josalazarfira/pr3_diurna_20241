@@ -1,6 +1,6 @@
-package co.edu.uniquindio.clase.model;
+package co.edu.uniquindio.programacion3.repaso.model;
 
-import co.edu.uniquindio.clase.services.ICarroVolador;
+import co.edu.uniquindio.programacion3.repaso.services.ICarroVolador;
 
 public class Carro extends Vehiculo implements ICarroVolador {
 
