@@ -10,12 +10,13 @@ public class Parametros_PorReferencia
 	public static void main(String[] args) 
 	{
 		//Paso por referencia
-		Estudiante pruebaObjeto = new Estudiante();
-		System.out.println("Valor del objeto antes de modificar: "+pruebaObjeto.getEdad());
+		Estudiante estudiante = new Estudiante();
+		estudiante.setEdad(22);
+		System.out.println("Valor del objeto antes de modificar: "+estudiante.getEdad());
 		
 		Clase2 clase2 = new Clase2();
-		clase2.cambiarValor(pruebaObjeto);
-		System.out.println("Valor del objeto al cambiarlo: "+pruebaObjeto.getEdad());
+		clase2.cambiarValor(estudiante);
+		System.out.println("Valor del objeto al cambiarlo: "+estudiante.getEdad());
 	}
 
 }
