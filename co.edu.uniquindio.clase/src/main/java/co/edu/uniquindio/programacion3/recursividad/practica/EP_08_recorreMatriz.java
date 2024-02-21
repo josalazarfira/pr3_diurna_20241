@@ -9,17 +9,46 @@ public class EP_08_recorreMatriz {
     public static void main(String[] args) {
     	
     	
-    	int [][] matriz = {
-    			{1,2,3},
-    			{4,5,6},
-    			{7,8,9}
-    	};
-    	
-    	recorrerMatriz(matriz,0,0);
+//    	int [][] matriz = {
+//    			{1,2,3},
+//    			{4,5,6},
+//    			{7,8,9}
+//    	};
+//
+//    	recorrerMatriz(matriz,0,0);
+		String [][] matriz = {
+				{"juan","pedro"},
+				{"ana","maria"}
+		};
+		int i = matriz.length-1;
+		int j = matriz[i].length-1;
+		recorrerMatrizCadena(matriz,i,j);
     }
-    
+
+	private static void recorrerMatrizCadena(String[][] matriz,
+											 int i,
+											 int j) {
+		if(i < 0 || j< 0){
+			System.out.println("Fin de la matriz");
+		}else{
+			System.out.print(" "+matriz[i][j]);
+
+			if(j == 0){
+				i--;
+				if(i >= 0){
+					j = matriz[i].length-1;
+				}
+				System.out.println("");
+			}else{
+				j--;
+			}
+			recorrerMatrizCadena(matriz, i, j);
+		}
+	}
+
+
+
 	private static void recorrerMatriz(int[][] matriz, int i, int j) {
-		
 		if(i == matriz.length || j == matriz[i].length){
 			System.out.println("Fin de la matriz");
 		}else{
