@@ -1,0 +1,41 @@
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-04-01T22:34:20.608992Z</date>
+  <millis>1712010860608</millis>
+  <nanos>992000</nanos>
+  <sequence>0</sequence>
+  <logger>co.edu.uniquindio.programacion3.flujosDatos.EjemplosBasicos</logger>
+  <level>SEVERE</level>
+  <class>co.edu.uniquindio.programacion3.flujosDatos.EjemplosBasicos</class>
+  <method>archivoRegistro</method>
+  <thread>1</thread>
+  <message>Primer mensaje 1.1</message>
+</record>
+<record>
+  <date>2024-04-01T22:34:20.637199Z</date>
+  <millis>1712010860637</millis>
+  <nanos>199000</nanos>
+  <sequence>1</sequence>
+  <logger>co.edu.uniquindio.programacion3.flujosDatos.EjemplosBasicos</logger>
+  <level>WARNING</level>
+  <class>co.edu.uniquindio.programacion3.flujosDatos.EjemplosBasicos</class>
+  <method>archivoRegistro</method>
+  <thread>1</thread>
+  <message>Segundo mensaje 2.1</message>
+</record>
+<record>
+  <date>2024-04-01T22:34:20.637581Z</date>
+  <millis>1712010860637</millis>
+  <nanos>581000</nanos>
+  <sequence>2</sequence>
+  <logger>co.edu.uniquindio.programacion3.flujosDatos.EjemplosBasicos</logger>
+  <level>SEVERE</level>
+  <class>co.edu.uniquindio.programacion3.flujosDatos.EjemplosBasicos</class>
+  <method>archivoRegistro</method>
+  <thread>1</thread>
+  <message>Tercer mensaje 3.1</message>
+</record>
+</log>
