@@ -18,10 +18,10 @@ public class EjemplosBasicos {
 
 	public static void main(String[] args) {
 		//Archivos de propiedades
-//		archivoPropiedades();
+		archivoPropiedades();
 
 		//Archivos de Registro
-		archivoRegistro();
+//		archivoRegistro();
 
 		//Manejo de carpetas (directorios)
 //		manejoCarpetas();
@@ -33,18 +33,21 @@ public class EjemplosBasicos {
 	private static void archivoPropiedades() {
 		ResourceBundle resourceBundle;
 
-		resourceBundle = ResourceBundle.getBundle("MiRecurso",new Locale("en","US"));
-		JOptionPane.showMessageDialog(null,resourceBundle.getString("promedioPro3"));
+//		resourceBundle = ResourceBundle.getBundle("MiRecurso",new Locale("en","US"));
+//		JOptionPane.showMessageDialog(null,resourceBundle.getString("promedioPro3"));
+//
+//
+//		resourceBundle = ResourceBundle.getBundle("MiRecurso",new Locale("pt","BR"));
+//		JOptionPane.showMessageDialog(null,resourceBundle.getString("saludoBienvenida"));
+//
+//		resourceBundle = ResourceBundle.getBundle("MiRecurso", new Locale("",""));
+//		JOptionPane.showMessageDialog(null,resourceBundle.getString("saludoBienvenida"));
 
+		resourceBundle = ResourceBundle.getBundle("conexiones");
+		String usuario = resourceBundle.getString("usuario1");
+		String clave = resourceBundle.getString("clave1");
 
-		resourceBundle = ResourceBundle.getBundle("MiRecurso",new Locale("pt","BR"));
-		JOptionPane.showMessageDialog(null,resourceBundle.getString("saludoBienvenida"));
-
-		resourceBundle = ResourceBundle.getBundle("MiRecurso", new Locale("",""));
-		JOptionPane.showMessageDialog(null,resourceBundle.getString("saludoBienvenida"));
-
-		resourceBundle = ResourceBundle.getBundle("conexiones", new Locale("",""));
-		JOptionPane.showMessageDialog(null,resourceBundle.getString("usuario"));
+		System.out.println(usuario + clave);
 	}
 
 	private static void archivoRegistro() {

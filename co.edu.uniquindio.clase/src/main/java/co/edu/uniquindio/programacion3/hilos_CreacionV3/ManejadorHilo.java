@@ -66,8 +66,6 @@ public class ManejadorHilo implements  Runnable{
 	}
 
 
-
-
 	@Override
 	public void run() {
 		Thread hiloEjecucion = Thread.currentThread();
