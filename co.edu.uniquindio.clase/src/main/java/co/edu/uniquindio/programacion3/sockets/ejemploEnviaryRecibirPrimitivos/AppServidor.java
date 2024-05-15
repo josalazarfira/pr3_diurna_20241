@@ -35,6 +35,7 @@ public class AppServidor {
 			server = new ServerSocket(puerto);
 			while(true)
 			{
+
 				System.out.println("Esperando al cliente");
 				socketComunicacion = server.accept();
 				
